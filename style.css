@@ -1,0 +1,205 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: white;
+    /* background-image: url("./assets/Background.png"); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+#menu {
+    background-color: #EEEEEE;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10vh 3vw;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px darkcyan;
+}
+
+#menu a {
+    font-size: 10px;
+}
+#menu h1 {
+    margin-bottom: 50px;
+    font-family: cursive;
+}
+
+#menu input {
+    margin: 10px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+#menu button {
+    margin: 5px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#startBtn {
+    background-color: green;
+    box-shadow: 1px 1px 1px rgb(0, 100, 0);
+    transition: all 0.2s;
+    color: white;
+}
+
+#startBtn:hover {
+    background-color: rgb(54, 190, 54);
+    color: black;
+    cursor: pointer;
+}
+
+#startBtn:disabled {
+    background-color: balck;
+}
+
+#leaderboardBtn {
+    background-color: blue;
+    box-shadow: 1px 1px 1px rgb(0, 0, 200);
+    transition: all 0.2s;
+    color: white;
+}
+
+#leaderboardBtn:hover {
+    background-color: rgb(70, 70, 241);
+    color: black;
+    cursor: pointer;
+}
+
+#difficultyBtn {
+    background-color: red;
+    box-shadow: 1px 1px 1px rgb(200, 0, 0);
+    transition: all 0.2s;
+    color: white;
+}
+
+#difficultyBtn:hover {
+    background-color: rgb(241, 95, 95);
+    color: black;
+    cursor: pointer;
+}
+
+#game {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+}
+
+#canvas {
+    cursor: none;
+}
+
+#leaderboard {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+#leaderboard button {
+    background-color: #D33;
+    color: white;
+    padding: 15px;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+}
+
+#leaderboard button:hover {
+    background-color: #E11;
+    cursor: pointer;
+}
+
+#scoreTable tr, th, td, table{
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+#difficulty {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(103, 103, 103);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#difficulty button {
+    color: white;
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+#difficulty #easyDifficultyBtn {
+    background-color: #3D3;
+}
+#difficulty #easyDifficultyBtn:hover {
+    background-color: #3A3;
+    cursor: pointer;
+}
+#difficulty #mediumDifficultyBtn {
+    background-color: #DD3;
+}
+#difficulty #mediumDifficultyBtn:hover {
+    background-color: #AA3;
+    cursor: pointer;
+}
+#difficulty #hardDifficultyBtn {
+    background-color: #D33;
+}
+#difficulty #hardDifficultyBtn:hover {
+    background-color: #A33;
+    cursor: pointer;
+}
+
+#Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+#overlayMenu {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#overlayMenu button {
+    background-color: #DDD;
+    padding: 15px;
+    margin: 5px;
+    border: none;
+}
+
+#overlayMenu button:hover {
+    background-color: #AAA;
+    cursor: pointer;
+}
+
+#pauseMenu {
+    display: none;
+}
+
+#gameOverMenu {
+    display: none;
+}
