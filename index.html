@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuckHunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu">
+        <img src="./assets/duckhunt_various_sheet_cr-removebg-preview.png" width="50%">
+        <h1>Duck Hunt</h1>
+        <label for="userInput">Username</label>
+        <input type="text" id="userInput" maxlength="20">
+        <button id="startBtn">Start Game</button>
+        <a>Current difficulty: <span id="difficultyText">Hard</span></a>
+        <button id="leaderboardBtn">Leaderboard</button>
+        <button id="difficultyBtn">Difficulty</button>
+    </div>
+    <div id="game">
+        <a>Username: <span id="username">-</span></a>
+        <a>Points: <span id="points">0</span></a>
+        <a>Health: <span id="health">3</span></a>
+        <canvas id="canvas"></canvas>
+        <div id="Overlay">
+            <div id="overlayMenu">
+                <h1><span id="pauseOrOver">Paused</span></h1>
+                <div id="pauseMenu">
+                    <button id="restartGameBtn">Restart</button>
+                    <button id="backToMenuBtn">Back To Menu</button>
+                    <button id="continueGameBtn">Continue</button>
+                </div>
+                <div id="gameOverMenu">
+                    <button id="backToMenu2Btn">Back To Menu</button>
+                    <button id="scoreboardGameBtn">Scoreboard</button>
+                    <button id="retryGameBtn">Retry</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="leaderboard">
+        <h3>Top 10 Points Leaderboard</h3>
+        <table id="scoreTable">
+            <!-- diisi javascript -->
+        </table>
+        <button id="backFromLeaderboard">Back to Menu</button>
+    </div>
+    <div id="difficulty">
+        <h3>Choose the Game Difficulty</h3>
+        <button id="easyDifficultyBtn">Easy (ducks spawn every 5s)</button>
+        <button id="mediumDifficultyBtn">Medium (ducks spawn every 3s)</button>
+        <button id="hardDifficultyBtn">Hard (ducks spawn every 2s)</button>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="menu.js"></script>
+    <script src="scoreboard.js"></script>
+</body>
+</html>
